@@ -1,0 +1,29 @@
+echo "Hello World"
+mkdir new_dir
+rm -r new_dir
+cp -R lorem/sed.txt lorem-copy
+cp -R lorem/at.txt lorem-copy |cp -R lorem/lorem.txt lorem-copo
+cat lorem/sed.txt
+cat lorem/at.txt |cat lorem/lorem.txt
+head -3 lorem-copy/sed.txt
+tail -3 lorem-copy/sed.txt
+echo ' Homo homini lupus.' >> lorem-copy/sed.txt
+tail -3 lorem-copy/sed.txt
+sed 's/et/ET/g' lorem/sed.txt >> lorem-copy/sed.txt
+who am i
+echo $PATH
+ls *.txt
+wc -l lorem/sed.txt
+find lorem -type f
+grep -n et
+cat lorem/at.txt | grep et | wc -l
+grep -r "et" ~/datamex_102020/module-1/lab-bash *.txt | wc -l
+
+read name
+echo $name
+mkdir $name
+rm -r $name
+
+for file in lorem/*
+do echo ${#file}
+done
