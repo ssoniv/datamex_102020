@@ -24,6 +24,11 @@ echo $name
 mkdir $name
 rm -r $name
 
-for file in lorem/*
-do echo ${#file}
+for file in $(ls lorem)
+do echo "${file%%.*}" 
 done
+
+for file in $(ls lorem)
+do echo "${#file%%.*}"
+done
+
