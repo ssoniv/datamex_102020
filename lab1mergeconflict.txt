@@ -1,0 +1,9 @@
+git commit -am "adding git fu"
+git push
+git checkout -b conflict-branch
+git commit -am "altering git fu"
+git push
+git checkout master
+git merge conflict-branch
+git commit -am "resolving conflict"
+git push
